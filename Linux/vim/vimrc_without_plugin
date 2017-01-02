@@ -1,0 +1,137 @@
+set nocompatible
+
+" tabs and spaces handling
+set expandtab
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+" highlight cursor line and column
+set cursorline
+set cursorcolumn
+" hidden startup messages
+set shortmess=atI
+" auto read and write
+set autowrite
+set autoread
+" when deal with unsaved files ask what to do
+set confirm
+" no backup files
+set nobackup
+" other settings 
+set langmenu=zh_CN.UTF-8
+set mouse=a
+set whichwrap+=<,>,h,l,[,]
+set background=dark
+set encoding=utf-8
+
+
+" tab length exceptions on some file types
+ autocmd FileType html setlocal shiftwidth=2 tabstop=2 softtabstop=2
+ autocmd FileType htmldjango setlocal shiftwidth=2 tabstop=2 softtabstop=2
+ autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 softtabstop=2
+
+" always show status bar
+set laststatus=2
+
+" incremental search
+set incsearch
+" highlighted search results
+set hlsearch
+" search ignore case
+set ignorecase
+" muting search highlighting 
+nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
+
+" syntax highlight on
+syntax on
+
+" show line numbers
+set nu
+
+" tab navigation mappings
+map tn :tabn<CR>
+map tp :tabp<CR>
+map tm :tabm 
+map tt :tabnew 
+map ts :tab split<CR>
+map <C-S-Right> :tabn<CR>
+imap <C-S-Right> <ESC>:tabn<CR>
+map <C-S-Left> :tabp<CR>
+imap <C-S-Left> <ESC>:tabp<CR>
+
+" navigate windows with meta+arrows
+map <M-Right> <c-w>l
+map <M-Left> <c-w>h
+map <M-Up> <c-w>k
+map <M-Down> <c-w>j
+imap <M-Right> <ESC><c-w>l
+imap <M-Left> <ESC><c-w>h
+imap <M-Up> <ESC><c-w>k
+imap <M-Down> <ESC><c-w>j
+
+" old autocomplete keyboard shortcut
+imap <C-J> <C-X><C-O>
+
+" Comment this line to enable autocompletion preview window
+" (displays documentation related to the selected completion option)
+" Disabled by default because preview makes the window flicker
+set completeopt-=preview
+
+" save as sudo
+ca w!! w !sudo tee "%"
+
+" simple recursive grep
+" both recursive grep commands with internal or external (fast) grep
+command! -nargs=1 RecurGrep lvimgrep /<args>/gj ./**/*.* | lopen | set nowrap
+command! -nargs=1 RecurGrepFast silent exec 'lgrep! <q-args> ./**/*.*' | lopen
+" mappings to call them
+nmap ,R :RecurGrep 
+nmap ,r :RecurGrepFast 
+" mappings to call them with the default word as search text
+nmap ,wR :RecurGrep <cword><CR>
+nmap ,wr :RecurGrepFast <cword><CR>
+
+" use 256 colors when possible
+if &term =~? 'mlterm\|xterm\|xterm-256\|screen-256'
+	let &t_Co = 256
+    colorscheme molokai
+else
+    colorscheme delek
+endif
+
+" colors for gvim
+if has('gui_running')
+    colorscheme wombat
+endif
+
+" when scrolling, keep cursor 3 lines away from screen border
+set scrolloff=3
+
+" autocompletion of files and commands behaves like zsh
+" (autocomplete menu)
+set wildmenu
+set wildmode=full
+
+" better backup, swap and undos storage
+set directory=~/.vim/dirs/tmp     " directory to place swap files in
+set backup                        " make backup files
+set backupdir=~/.vim/dirs/backups " where to put backup files
+set undofile                      " persistent undos - undo after you re-open the file
+set undodir=~/.vim/dirs/undos
+set viminfo+=n~/.vim/dirs/viminfo
+" store yankring history file there too
+let g:yankring_history_dir = '~/.vim/dirs/'
+
+" create needed directories if they don't exist
+if !isdirectory(&backupdir)
+    call mkdir(&backupdir, "p")
+endif
+if !isdirectory(&directory)
+    call mkdir(&directory, "p")
+endif
+if !isdirectory(&undodir)
+    call mkdir(&undodir, "p")
+endif
+
+"Enable backspace to delete the space character, such as space,tab,line break
+set backspace=indent,eol,start

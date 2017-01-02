@@ -12,7 +12,7 @@
 
 ## 编译安装
 
-通过下载源码进行编译安装，可灵活地选择开启Vim的特性支持，如支持Python，Lua，部分Vim插件需要这些特性支持
+    通过下载源码进行编译安装，可灵活地选择开启Vim的特性支持，如支持Python，Lua，部分Vim插件需要这些特性支持
 
 1. 下载所需版本的Vim源码 ([地址](ftp://ftp.vim.org/pub/vim/unix))，这里以Vim8.0为例
 
@@ -106,6 +106,13 @@
 3. 安装
 - `sudo make install`
 
+4. 配置
+
+    参考配置文件
+
+    [带插件的配置文件](./vimrc_with_plugin)
+
+    [不带插件的配置文件](./vimrc_without_plugin)
 
 ## 备注
-- 开启部分语言特性支持需要有该语言开发环境，需要安装`libxxxy.y-dev`包，其中xxx为编程语言名，y.y为版本号，如开启python3支持需要安装`libpython3.x-dev`，如果环境不满足，configure并不会报错。
+- 开启部分语言特性支持需要有该语言开发环境，需要安装`libxxxy.y-dev`包，其中xxx为编程语言名，y.y为版本号，如开启python3支持需要安装`libpython3.x-dev`，如果环境不满足，configure并不会报错，但编译安装后该特性无法成功开启。
