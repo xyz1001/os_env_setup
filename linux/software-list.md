@@ -16,6 +16,7 @@
 - vlc
 - gcolor2
 - peazip
+- nautilus-nutstore
 
 ### 官网/软件主页下载
 
@@ -74,7 +75,7 @@
 - proxychains-ng
 - vim
 
-## 运行库
+## 开发/运行库
 
 - build-essential
 - libqt5svg5-dev 
@@ -82,6 +83,7 @@
 - libqt5x11extras5-dev
 - qmlscene
 - qtdeclarative5-dev    #qmlscene
+- qtmultimedia5-dev
 
 # 可选软件列表
 
