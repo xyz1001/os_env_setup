@@ -37,6 +37,7 @@
 
 - aria2
 - zsh
+- tmux
 - git
 - python3
 - python2.7
@@ -53,6 +54,12 @@
 - nodejs
 - npm
 - curl
+- nethogs
+- oracle-java8
+- vim-gnome
+- xclip
+- qt5-qmake
+- qt4-qmake
 
 ### pip安装
 
@@ -73,6 +80,7 @@
 - libqt5svg5-dev 
 - libqt5scintilla2-dev
 - libqt5x11extras5-dev
+- qmlscene
 - qtdeclarative5-dev    #qmlscene
 
 # 可选软件列表
