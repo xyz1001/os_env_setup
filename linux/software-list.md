@@ -17,6 +17,7 @@
 - gcolor2
 - peazip
 - nautilus-nutstore
+- gitg
 
 ### 官网/软件主页下载
 
@@ -61,10 +62,22 @@
 - xclip
 - qt5-qmake
 - qt4-qmake
+- tig
+- htop
+- silversearcher-ag
+- tig
+- shellcheck
+- tree
+- cloc
+- ncdu
 
 ### pip安装
 
 - youdao
+- you-get
+
+### npm安装
+- tldr
 
 ### 官网/软件主页下载
 
