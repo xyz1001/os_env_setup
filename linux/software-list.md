@@ -18,6 +18,7 @@
 - peazip
 - nautilus-nutstore
 - gitg
+- clipit
 
 ### 官网/软件主页下载
 
