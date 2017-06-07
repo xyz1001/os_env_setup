@@ -26,6 +26,7 @@
 - electronic-wechat (打包有问题，需重新打包)
 - HTYMediaPlayer
 - [albert](https://launchpad.net/~nilarimogard/+archive/ubuntu/webupd8/+packages)
+- dukto
 
 ### 源码编译
 
