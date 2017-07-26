@@ -1,0 +1,243 @@
+    6  sudo apt update
+    7  sudo apt upgrade
+    9  sudo sh install.sh 
+   10  chsh -s /usr/bin/zsh 
+   12  sudo apt update
+   13  apt list --upgradable 
+   14  sudo apt upgrade
+   15  sudo apt install bamfdaemon 
+   16  sudo apt install aria2 zsh tmux git python3 python3-pip cmake g++ ffmpeg lua5.3 privoxy qttools5-dev-tools gdb locate curl xclip qt5-cmake tig htop silversearcher-ag  tree cloc ncdu
+   17  sudo apt install aria2 zsh tmux git python3 python3-pip cmake g++ ffmpeg lua5.3 privoxy qttools5-dev-tools gdb locate curl xclip qt5-qmake tig htop silversearcher-ag  tree cloc ncdu
+   18  sudo apt purge vim*
+   19  sudo apt install vim-gnome 
+   20  pwd
+   21  sudo apt purge deepinwine-qq
+   22  sudo apt purge deepin.com.qq.im 
+   23  sudo apt purge steam 
+   24  find . -name steam
+   25  find . -name "*steam*"
+   27  sudo apt purge youdao-dict 
+   28  mkdir Project
+   29  mkdir Code
+   30  cp -s /tmp/ ~/Temp
+   31  cp -s /tmp ~/Temp
+   32  ln -s /tmp Temp
+   34  cd Temp
+   36  pwd
+   37  cd ..
+   38  cd Project/
+   39  git
+   40  git config --global user.name "Zhang Fan"
+   41  git config --global user.email zhangfan3427@cvte.com
+   42  git config --global http.proxy 'socks5://127.0.0.1:1080'
+   43  git config --global https.proxy 'socks5://127.0.0.1:1080'
+   44  git clone git@github.com:xyz1001/software-notes.git
+   45  ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+   46  ssh-keygen -t rsa -b 4096 -C "zhangfan3427@cvte.com"
+   47  cat ~/.ssh/id_rsa.pub 
+   48  git clone git@github.com:xyz1001/software-notes.git
+   49  cd ～
+   51  git clone git@github.com:xyz1001/dotfiles.git
+   61  cd dotfiles/
+   63  ls -al
+   64  ls -al .vim
+   65  git checkout *
+   66  ls -al .vim
+   67  git status
+   68  git checkout HEAD
+   69  git reset HEAD 
+   70  git status
+   71  rm -rf .vim/.vim 
+   72  rm -rf .zsh/.zsh
+   73  git status
+   74  ln -s ~/dotfiles/.vim ~
+   75  ln -s ~/dotfiles/.zsh ~
+   76  ls ~
+   77  ls -al ~
+   78  ls -al
+   79  ln -s ~/dotfiles/.aria2/ ~
+   80  ln -s ~/dotfiles/.agignore ~
+   81  cat .gitconfig
+   83  history
+   84  history >Temp/history1
+    2  2017-07-18 16:44  cd Project
+    4  2017-07-18 16:44  cd software-notes
+    6  2017-07-18 16:44  ll
+    7  2017-07-18 16:44  rm .需安装软件列表.txt.swp
+    8  2017-07-18 16:45  vim linux/software-list.md
+    9  2017-07-18 16:46  sudo apt install zeal
+   10  2017-07-18 16:46  sudo apt install dukto
+   11  2017-07-18 16:56  sudo apt install simplescreenrecorder
+   12  2017-07-18 16:56  sudo apt install gcolor2
+   13  2017-07-18 16:56  sudo apt install xarchiver
+   14  2017-07-18 16:59  vim ~/.nutstore/dist/conf/nutstore.properties
+   15  2017-07-18 17:00  sudo sh install.sh
+   17  2017-07-18 17:09  fc-list|grep cjk
+   18  2017-07-18 17:09  sudo fc-list|grep cjk
+   19  2017-07-18 17:09  fc-list|grep cjk
+   20  2017-07-18 17:16  cd Project
+   21  2017-07-18 17:16  vim software-notes/linux/software-list.md
+   22  2017-07-18 17:18  sudo apt install clipit
+   23  2017-07-18 17:18  sudo apt install gitg
+   24  2017-07-18 17:21  vim software-notes/linux/nutstore/nutstore.md
+   25  2017-07-18 17:23  vim ~/.nutstore/dist/conf/nutstore.properties
+   26  2017-07-18 17:30  sudo apt install libqt5core5a
+   27  2017-07-18 17:35  vim software-notes/linux/staruml
+   28  2017-07-18 17:36  vim /opt/staruml/www/license/node/LicenseManagerDomain.js
+   29  2017-07-18 17:43  vim /etc/X11/xorg.conf.d/50-synaptics.conf
+   30  2017-07-18 17:45  ll
+   31  2017-07-18 17:45  ls /etc
+   32  2017-07-18 17:46  vim /etc/default/keyboard
+   33  2017-07-18 17:46  vim /usr/share/doc/keyboard-configuration/README.Debian
+   34  2017-07-18 17:47  vim /etc/X11/Xsession.options
+   35  2017-07-18 17:47  vim /usr/share/doc/keyboard-configuration/README.Debian
+   36  2017-07-18 17:50  vim ~/.tmux.conf
+   37  2017-07-18 17:51  curl -fLo ~/.vim/autoload/plug.vim --create-dirs \\n    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+   38  2017-07-18 17:52  vim 
+   39  2017-07-18 17:56  git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+   40  2017-07-18 17:57  vim ~/install.sh
+   41  2017-07-18 18:00  cd ~/.vim/plugged/YouCompleteMe
+   43  2017-07-18 18:01  ./install.py --clang-completer
+   44  2017-07-18 18:04  ncdu
+   45  2017-07-18 18:04  tig
+   46  2017-07-18 18:05  sudo pip3 install youdao
+   47  2017-07-18 18:05  sudo pip3 install you-get
+   48  2017-07-18 18:05  sudo pip install youdao
+   49  2017-07-18 18:06  sudo apt install pip
+   50  2017-07-18 18:06  sudo apt install python-pip
+   51  2017-07-18 18:06  sudo pip install youdao
+   52  2017-07-18 18:08  sudo apt install gcc
+   53  2017-07-18 18:08  sudo apt install gcc-6
+   55  2017-07-18 18:08  cd ~/Temp
+   56  2017-07-18 18:09  git clone git@github.com:longcw/youdao.git
+   57  2017-07-18 18:09  cd youdao
+   58  2017-07-18 18:10  sudo python setup.py install
+   59  2017-07-18 18:12  sudo python3 setup.py install
+   60  2017-07-18 18:12  sudo python setup.py install
+   61  2017-07-18 18:13  sudo apt install linxml
+   62  2017-07-18 18:14  sudo apt install libxml
+   63  2017-07-18 18:14  sudo apt install libxml2
+   64  2017-07-18 18:14  sudo apt install libxml2-dev
+   65  2017-07-18 18:14  sudo python setup.py install
+   66  2017-07-18 18:16  sudo apt install libxml2 libxslt
+   67  2017-07-18 18:17  python setup.py install
+   68  2017-07-18 18:18  sudo apt install xml2
+   69  2017-07-18 18:18  sudo apt install xslt
+   70  2017-07-18 18:19  sudo apt install build-essential libqt5svg5-dev libqt5scintilla2-dev libqt5x11extras5-dev qmlscene qtdeclarative5-dev qtmultimedia5-dev
+   71  2017-07-18 18:22  sudo python setup.py install
+   72  2017-07-18 18:25  cd ~/Downloads
+   73  2017-07-18 18:25  tar xvf libxslt-1.1.29.tar.gz
+   74  2017-07-18 18:25  cd libxslt-1.1.29
+   76  2017-07-18 18:25  ./config
+   77  2017-07-18 18:25  ./configure
+   78  2017-07-18 18:25  make
+   79  2017-07-18 18:26  sudo make install
+   85  2017-07-18 18:27  sudo python setup.py install
+   86  2017-07-18 18:30  youdao
+   87  2017-07-18 18:30  youdao a
+   88  2017-07-18 18:30  yd my
+   89  2017-07-18 19:08  sudo apt-get install polipo
+   90  2017-07-18 19:08  vim /etc/polipo/config
+   91  2017-07-18 19:09  cd ~/Project/software-notes
+   92  2017-07-18 19:09  vim linux/software-list.md
+   93  2017-07-18 19:11  vim linux/privoxy
+   94  2017-07-18 19:12  sudo apt purge polipo
+   95  2017-07-18 19:12  sudo apt install privoxy
+   96  2017-07-18 19:12  vim /etc/privoxy/config
+   97  2017-07-18 19:14  sudo service privoxy start
+   98  2017-07-18 19:14  ./install.py --clang-completer
+   99  2017-07-18 19:23  vim /etc/privoxy/config
+  100  2017-07-18 20:41  ./install.py --clang-completer
+  102  2017-07-18 21:31  vim /etc/default/keyboard
+  104  2017-07-18 21:38  vim
+  105  2017-07-18 21:41  vim /etc/default/keyboard
+  113  2017-07-19 08:09  mkdir Application
+  114  2017-07-19 08:10  tar xvf Downloads/BaiduExporter-master.zip -C Application
+  115  2017-07-19 08:10  unzip Downloads/BaiduExporter-master.zip -C Application
+  116  2017-07-19 08:11  cd Application
+  117  2017-07-19 08:11  unzip Downloads/BaiduExporter-master.zip
+  118  2017-07-19 08:11  unzip ~/Downloads/BaiduExporter-master.zip
+  120  2017-07-19 08:11  mv BaiduExporter-master BaiduExporter
+  121  2017-07-19 08:18  git clone git@github.com:noahsai/dde-dock-monitor.git
+  122  2017-07-19 08:19  mv dde-dock-monitor Code
+  123  2017-07-19 08:19  cd Code
+  124  2017-07-19 08:19  cd dde-dock-monitor
+  125  2017-07-19 08:19  qmake .
+  126  2017-07-19 08:19  sudo apt install qt5-default
+  127  2017-07-19 08:19  qmake .
+  129  2017-07-19 08:19  make
+  130  2017-07-19 08:19  sudo apt install dde-dock-dev
+  131  2017-07-19 08:19  make
+  133  2017-07-19 08:20  ll libdde-monitor-plugin.so
+  134  2017-07-19 08:20  mv libdde-monitor-plugin.so /usr/lib/dde-dock/plugins
+  135  2017-07-19 08:21  sudo mv libdde-monitor-plugin.so /usr/lib/dde-dock/plugins
+  136  2017-07-19 08:21  pkill dde-dock
+  138  2017-07-19 08:27  vim ~/.vimrc
+  140  2017-07-19 08:36  vim ~/.tmux.conf
+  142  2017-07-19 08:39  vim ~/.tmux.conf
+  143  2017-07-19 08:39  vim .zshrc
+  144  2017-07-19 08:40  tmux list-keys
+  145  2017-07-19 08:43  vim ~/.zsh/config.zsh
+  146  2017-07-19 08:48  vim ~/.tmux.conf
+  147  2017-07-19 08:55  :q
+  148  2017-07-19 08:56  la
+  149  2017-07-19 08:57  vim ~/.vimrc
+  150  2017-07-19 09:00  vim ~/.zsh/alais.zsh
+  151  2017-07-19 09:00  vim ~/.zsh/config.zsh
+  152  2017-07-19 09:11  curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
+  153  2017-07-19 09:11  vim ~/.zsh
+  154  2017-07-19 09:12  vim ~/.zshrc
+  155  2017-07-19 09:12  nvm install stable
+  156  2017-07-19 09:12  vim ~/.zsh/config.zsh
+  157  2017-07-19 09:13  nvm install stable
+  158  2017-07-19 09:16  npm install tldr
+  159  2017-07-19 09:17  tldr
+  161  2017-07-19 09:17  rm package-lock.json
+  162  2017-07-19 09:17  vim install.sh
+  163  2017-07-19 09:18  mv install.sh dotfiles
+  165  2017-07-19 09:18  npm install -g tldr
+  167  2017-07-19 09:19  tldr tar
+  169  2017-07-19 09:19  vim dotfiles/install.sh
+  170  2017-07-19 09:23  vim ~/.vimrc
+  171  2017-07-19 09:23  vim ~/.vim/pluginconfig/vimcommon.vim
+  172* 2017-07-19 09:25  sudo pip install thefuck
+  173* 2017-07-19 09:25  sudo pip3 install thefuck
+  174* 2017-07-19 09:28  cd Downloads/
+  175* 2017-07-19 09:28  unzip proxychains-ng-master.zip
+  176* 2017-07-19 09:28  cd proxychains-ng-master
+  178* 2017-07-19 09:28  ./configure
+  179* 2017-07-19 09:28  make
+  180* 2017-07-19 09:28  sudo make install
+  181* 2017-07-19 09:28  proxychains4
+  183* 2017-07-19 09:31  find / -name proxychains.conf
+  184* 2017-07-19 09:33  chmod u+s /usr/bin/find
+  185* 2017-07-19 09:33  sudo chmod u+s /usr/bin/find
+  187* 2017-07-19 09:33  find / -name proxychains.conf
+  188* 2017-07-19 09:34  vim Downloads/proxychains-ng-master/src/proxychains.conf
+  189* 2017-07-19 09:35  cp Downloads/proxychains-ng-master/src/proxychains.conf /etc
+  190* 2017-07-19 09:35  sudo cp Downloads/proxychains-ng-master/src/proxychains.conf /etc
+  191* 2017-07-19 09:35  proxychains4 
+  192* 2017-07-19 09:36  vim /etc/proxychains.conf
+  193* 2017-07-19 09:37  sudo pip3 install thefuck
+  203* 2017-07-19 09:39  sudo tar xvf Downloads/jdk-8u141-linux-x64.tar.gz -C /usr/local
+  204* 2017-07-19 09:39  ll /usr/local
+  205* 2017-07-19 09:39  vim ~/.zsh/config.zsh
+  206* 2017-07-19 09:40  vim ~/Project/software-notes/linux/jdk/jdk.md
+  207* 2017-07-19 09:41  sudo update-alternatives --install /usr/bin/java java /usr/local/jdk1.8.0_141/bin/java 100
+  208* 2017-07-19 09:42  sudo update-alternatives --install /usr/bin/javac javac /usr/local/jdk1.8.0_141/bin/javac 100
+  209* 2017-07-19 09:42  java
+  210* 2017-07-19 09:42  java --version
+  211* 2017-07-19 09:42  java -version
+  212* 2017-07-19 09:42  update-alternatives --config java
+  213* 2017-07-19 09:43  sudo update-alternatives --config java
+  214* 2017-07-19 09:44  vim ~/Project/software-notes/linux/proxychains-ng/proxychains-ng.md
+  215* 2017-07-19 09:49  mkdir Project/software-notes/linux/proxychains-ng
+  216* 2017-07-19 09:50  vim ~/.zsh/config.zsh
+  217* 2017-07-19 09:52  vim dotfiles/install.sh
+  218  2017-07-19 10:01  vim ~/.vimrc
+  219  2017-07-19 10:01  vim ~/.vim/pluginconfig/bash-support.vim
+  220* 2017-07-19 10:02  vim dotfiles/install.sh
+  221* 2017-07-19 10:03  vim a.sh
+  222* 2017-07-19 10:06  vim dotfiles/install.sh
+  223  2017-07-19 10:15  vim ~/.vimrc
+  224* 2017-07-19 10:17  vim dotfiles/install.sh

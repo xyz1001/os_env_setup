@@ -29,4 +29,4 @@ cmake . && make
 ```
 > 4. 添加运行库
 将生成的`platforminputcontext/libfcitxplatforminputcontextplugin.so`文件复制至Qt Creator的`plugins/platforminputcontexts/`文件夹，确保`.so`文件有可执行权限
-**`gcc_64_Qt5.8`编译的文件以上传至微云`软件/Linux/fcitx-qt5`**
+

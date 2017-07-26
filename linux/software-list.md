@@ -5,25 +5,25 @@
 ### 软件源存在
 
 - notepadqq
-- fluxgui
+- redshift
 - teamviewer
 - shadowsocks-qt5
 - zeal
 - sqlitestudio
 - thunderbird
-- apps.com.xunlei.mini
+- deepin.com.thunderspeed
 - simplescreenrecorder
 - vlc
 - gcolor2
-- peazip
+- xarchiver
 - nautilus-nutstore
 - gitg
 - clipit
+- electronic-wechat
 
 ### 官网/软件主页下载
 
 - staruml
-- electronic-wechat (打包有问题，需重新打包)
 - HTYMediaPlayer
 - [albert](https://launchpad.net/~nilarimogard/+archive/ubuntu/webupd8/+packages)
 - dukto
@@ -52,26 +52,23 @@
 - ffmpeg
 - lua5.3
 - privoxy
-- qttools5-dev-tools
 - gdb
 - locate
 - nodejs
 - npm
 - curl
-- nethogs
 - oracle-java8
 - vim-gnome
 - xclip
 - qt5-qmake
 - qt4-qmake
-- tig
 - htop
 - silversearcher-ag
 - tig
 - shellcheck
 - tree
-- cloc
-- ncdu
+- cloc #统计代码行数
+- ncdu #查看磁盘空间文件占用率
 
 ### pip安装
 
@@ -88,11 +85,11 @@
 ### 源码编译
 
 - proxychains-ng
-- vim
 
 ## 开发/运行库
 
 - build-essential
+- qttools5-dev-tools
 - libqt5svg5-dev 
 - libqt5scintilla2-dev
 - libqt5x11extras5-dev
