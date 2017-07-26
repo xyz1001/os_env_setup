@@ -21,6 +21,8 @@ set -o nounset                              # Treat unset variables as an error
 
 # 1. 更新系统
 echo "1. 更新系统"
-echo "  1.1 修改软件源" && read -n 1
-echo "  1.2 执行\"sudo apt update && sudo apt upgrade。\""
+echo "  1.1 修改软件源\n请手动切换软件源" && read -n 1
+echo "  1.2 正在更新系统"
+sudo apt update && sudo apt upgrade
+
 
