@@ -6,6 +6,7 @@ albert是一个强大方便的启动器，支持软件启动，文件查找，�
 
 ## deb包安装
 在[launchpad](https://launchpad.net/)中搜索，位于`ppa:nilarimogard/webupd8`中
+[下载页面](https://launchpad.net/~nilarimogard/+archive/ubuntu/webupd8)
 
 ## 编译安装
 ### Deepin
