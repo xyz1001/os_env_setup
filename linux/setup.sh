@@ -61,7 +61,7 @@ function installBaseSoftware()
     fi
     sudo ${INSTALL} vim-gnome
     echo "  2.4 安装GUI软甲"
-    sudo ${INSTALL} zeal dukto simplescreenrecorder gcolor2 xarchiver clipit gitg thunderbird shadowsocks-qt5 nautilus-nutstore netease-cloud-music vlc notepadqq sqlitestudio redshift virtualbox sogoupinyin google-chrome-stable typora electronic-wechat albert meld screenruler
+    sudo ${INSTALL} zeal dukto simplescreenrecorder gcolor2 xarchiver clipit gitg thunderbird shadowsocks-qt5 nautilus-nutstore netease-cloud-music vlc notepadqq sqlitestudio redshift virtualbox sogoupinyin google-chrome-stable typora electronic-wechat albert screenruler persepolis
     echo "安装pip软件"
     sudo pip2 install youdao
     sudo pip3 install you-get thefuck
