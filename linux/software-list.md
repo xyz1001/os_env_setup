@@ -21,6 +21,7 @@
 - clipit
 - electronic-wechat
 - meld
+- screenruler
 
 ### 官网/软件主页下载
 

@@ -54,14 +54,14 @@ function installBaseSoftware()
     echo "  2.2 安装开发环境"
     sudo ${INSTALL} qttools5-dev-tools git gdb  dde-dock-dev
     echo "  2.3 安装命令行软件"
-    sudo ${INSTALL} zsh tmux aria2 ffmpeg privoxy locate curl xclip tig silversearcher-ag tree cloc ncdu python-pip python3-pip nodejs nodejs-legacy npm
+    sudo ${INSTALL} zsh tmux aria2 ffmpeg privoxy locate curl xclip tig silversearcher-ag tree cloc ncdu python-pip python3-pip nodejs nodejs-legacy npm ctags-exuberant
     if [ ${OS} = "Deepin" ]; then
         echo "卸载无用安装包"
         sudo ${UNINSTALL} vim youdao-dict steam deepin.com.qq.im
     fi
     sudo ${INSTALL} vim-gnome
     echo "  2.4 安装GUI软甲"
-    sudo ${INSTALL} zeal dukto simplescreenrecorder gcolor2 xarchiver clipit gitg thunderbird shadowsocks-qt5 nautilus-nutstore netease-cloud-music vlc notepadqq sqlitestudio redshift virtualbox sogoupinyin google-chrome-stable typora electronic-wechat albert meld
+    sudo ${INSTALL} zeal dukto simplescreenrecorder gcolor2 xarchiver clipit gitg thunderbird shadowsocks-qt5 nautilus-nutstore netease-cloud-music vlc notepadqq sqlitestudio redshift virtualbox sogoupinyin google-chrome-stable typora electronic-wechat albert meld screenruler
     echo "安装pip软件"
     sudo pip2 install youdao
     sudo pip3 install you-get thefuck
