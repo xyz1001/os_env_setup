@@ -54,7 +54,7 @@ function installBaseSoftware()
     echo "  2.2 安装开发环境"
     sudo ${INSTALL} qttools5-dev-tools git gdb  dde-dock-dev
     echo "  2.3 安装命令行软件"
-    sudo ${INSTALL} zsh tmux aria2 ffmpeg privoxy locate curl xclip tig silversearcher-ag tree cloc ncdu python-pip python3-pip nodejs nodejs-legacy npm ctags-exuberant
+    sudo ${INSTALL} zsh tmux aria2 ffmpeg privoxy locate curl xclip tig silversearcher-ag tree cloc ncdu python-pip python3-pip nodejs nodejs-legacy npm ctags-exuberant clang-format
     if [ ${OS} = "Deepin" ]; then
         echo "卸载无用安装包"
         sudo ${UNINSTALL} vim youdao-dict steam deepin.com.qq.im
@@ -140,8 +140,8 @@ function configCliSoftware()
     echo "    1. 获取dotfiles"
     git clone git@github.com:xyz1001/dotfiles.git ${HOME}/dotfiles
     echo "    2. 安装dotfile"
-    rm -rf ${HOME}/{.zshrc,.zsh,.vimrc,.vim,.tmux.conf,.gitconfig,.aria2}
-    ln -s ${HOME}/dotfiles/{.zshrc,.zsh,.vimrc,.vim,.tmux.conf,.gitconfig,.aria2} ${HOME}
+    rm -rf ${HOME}/{.zshrc,.zsh,.vimrc,.vim,.tmux.conf,.gitconfig,.aria2,.clang-format}
+    ln -s ${HOME}/dotfiles/{.zshrc,.zsh,.vimrc,.vim,.tmux.conf,.gitconfig,.aria2,.clang-format} ${HOME}
     echo "  5.3 设置zsh/tmux/vim"
     chsh -s /usr/bin/zsh
     git clone https://github.com/tmux-plugins/tpm ${HOME}/.tmux/plugins/tpm
@@ -160,6 +160,9 @@ function configCliSoftware()
     echo "    privoxy已启动，端口号8118"
     echo "  5.5 设置proxychains-ng"
     sudo sed -i "s/socks4\s*127.0.0.1\s*9050/socks5 \t127.0.0.1 1080/g" /etc/proxychains.conf
+    echo "  5.6 安装cpplint"
+    sudo wget https://raw.githubusercontent.com/google/styleguide/gh-pages/cpplint/cpplint.py -O /usr/local/bin/cpplint
+    sudo chmod +x /usr/local/bin/cpplint
 }
 
 function configGuiSoftware()

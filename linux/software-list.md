@@ -72,6 +72,7 @@
 - tree
 - cloc #统计代码行数
 - ncdu #查看磁盘空间文件占用率
+- clang-format
 
 ### pip安装
 
