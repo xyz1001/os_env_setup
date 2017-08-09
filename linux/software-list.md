@@ -20,6 +20,7 @@
 - gitg
 - clipit
 - electronic-wechat
+- meld
 
 ### 官网/软件主页下载
 
