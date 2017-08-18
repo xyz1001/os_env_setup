@@ -50,7 +50,7 @@ function installBaseSoftware()
 {
     echo "2. 安装基础软件"
     echo "  2.1 安装编译环境"
-    sudo ${INSTALL} g++ gcc gcc-6 clang-5.0 cmake autoconf libtool autopoint gettext python3 python qt5-qmake qt5-default lua5.3 build-essential qmlscene libqt5core5a
+    sudo ${INSTALL} g++ gcc gcc-6 clang-5.0 cmake autoconf libtool autopoint gettext python3 python qt5-qmake qt5-default lua5.3 build-essential qmlscene libqt5core5a golang
     echo "  2.2 安装开发环境"
     sudo ${INSTALL} qttools5-dev-tools git gdb  dde-dock-dev
     echo "  2.3 安装命令行软件"
@@ -166,6 +166,8 @@ function configCliSoftware()
     echo "  5.6 安装cpplint"
     sudo wget https://raw.githubusercontent.com/google/styleguide/gh-pages/cpplint/cpplint.py -O /usr/local/bin/cpplint
     sudo chmod +x /usr/local/bin/cpplint
+    echo "  5.7 安装ccat"
+    go get -u github.com/jingweno/ccat
 }
 
 function configGuiSoftware()
