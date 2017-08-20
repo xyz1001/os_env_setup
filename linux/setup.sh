@@ -61,7 +61,7 @@ function installBaseSoftware()
     fi
     sudo ${INSTALL} vim-gnome
     echo "  2.4 安装GUI软甲"
-    sudo ${INSTALL} zeal dukto simplescreenrecorder gcolor2 xarchiver clipit gitg thunderbird shadowsocks-qt5 nautilus-nutstore netease-cloud-music vlc notepadqq sqlitestudio redshift virtualbox sogoupinyin google-chrome-stable typora electronic-wechat albert screenruler persepolis
+    sudo ${INSTALL} zeal dukto simplescreenrecorder gcolor2 xarchiver clipit gitg thunderbird shadowsocks-qt5 nautilus-nutstore netease-cloud-music vlc notepadqq sqlitestudio redshift virtualbox sogoupinyin google-chrome-stable typora electronic-wechat albert meld screenruler
     echo "安装pip软件"
     sudo pip2 install youdao
     sudo pip3 install you-get thefuck
@@ -94,6 +94,9 @@ function installExtraSoftware()
             echo "  3.6 安装Deepinwine软件"
         sudo ${INSTALL} deepin.com.qq.office deepin.com.thunderspeed
     fi
+    echo "  3.7 安装persepolis(aria2下载前端)"
+    google-chrome https://launchpad.net/~persepolis/+archive/ubuntu/ppa/+packages
+    echo "按任意键继续..." && read -n 1
 }
 
 # 4. 系统配置
