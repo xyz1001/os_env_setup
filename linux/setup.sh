@@ -5,7 +5,7 @@
 # 
 #         USAGE: ./setup.sh 
 # 
-#   DESCRIPTION: 全新Linux系统环境搭建脚本
+#   DESCRIPTION: 全新Deepin系统环境搭建脚本
 # 
 #       OPTIONS: ---
 #  REQUIREMENTS: ---
@@ -29,11 +29,9 @@ if [ ${OS} = "Deepin" ]; then
     UPGRADE="apt upgrade"
     INSTALL="apt install"
     UNINSTALL="apt purge"
-elif [ ${OS} = "Manjaro" ]; then
-    UPDATE="pacman -Sy"
-    UPGRADE="pacman -Su"
-    INSTALL="pacman -S"
-    UNINSTALL="pacman -R"
+else
+    echo "当前运行系统是${OS}，该脚本仅适用于Deepin"
+    exit(1)
 fi
 
 # 1. 更新系统
