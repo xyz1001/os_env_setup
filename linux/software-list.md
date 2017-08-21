@@ -70,9 +70,10 @@
 - tig
 - shellcheck
 - tree
-- cloc #统计代码行数
-- ncdu #查看磁盘空间文件占用率
+- cloc `统计代码行数`
+- ncdu `查看磁盘空间文件占用率`
 - clang-format
+- yapf  `google python代码格式化工具`
 
 ### pip安装
 

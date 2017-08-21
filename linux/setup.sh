@@ -53,8 +53,7 @@ function installBaseSoftware()
     echo "  2.2 安装开发环境"
     sudo ${INSTALL} qttools5-dev-tools git gdb  dde-dock-dev
     echo "  2.3 安装命令行软件"
-    sudo ${INSTALL} zsh tmux aria2 ffmpeg privoxy locate curl xclip tig silversearcher-ag tree cloc ncdu python-pip python3-pip nodejs nodejs-legacy npm ctags-exuberant clang-format
-    sudo npm install npm@lts -g
+    sudo ${INSTALL} zsh tmux aria2 ffmpeg privoxy locate curl xclip tig silversearcher-ag tree cloc ncdu python-pip python3-pip nodejs nodejs-legacy npm ctags-exuberant clang-format yapf
     if [ ${OS} = "Deepin" ]; then
         echo "卸载无用安装包"
         sudo ${UNINSTALL} vim youdao-dict steam deepin.com.qq.im
