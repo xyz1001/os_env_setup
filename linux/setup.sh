@@ -142,8 +142,8 @@ function configCliSoftware()
     echo "    1. 获取dotfiles"
     git clone git@github.com:xyz1001/dotfiles.git "${HOME}/dotfiles"
     echo "    2. 安装dotfile"
-    rm -rf "${HOME}"/{.zshrc,.zsh,.vimrc,.vim,.tmux.conf,.gitconfig,.aria2,.clang-format}
-    ln -s "${HOME}"/dotfiles/{.zshrc,.zsh,.vimrc,.vim,.tmux.conf,.gitconfig,.aria2,.clang-format} ${HOME}
+    rm -rf "${HOME}"/{.zshrc,.zsh,.vimrc,.vim,.tmux.conf,.gitconfig,.aria2,.clang-format,.agignore}
+    ln -s "${HOME}"/dotfiles/{.zshrc,.zsh,.vimrc,.vim,.tmux.conf,.gitconfig,.aria2,.clang-format,.agignore} ${HOME}
     echo "  5.3 设置zsh/tmux/vim"
     chsh -s /usr/bin/zsh
     git clone https://github.com/tmux-plugins/tpm "${HOME}/.tmux/plugins/tpm"
