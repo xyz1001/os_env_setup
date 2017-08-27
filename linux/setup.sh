@@ -31,7 +31,7 @@ if [ ${OS} = "Deepin" ]; then
     UNINSTALL="apt purge"
 else
     echo "当前运行系统是${OS}，该脚本仅适用于Deepin"
-    exit(1)
+    exit 1
 fi
 
 # 1. 更新系统
@@ -53,6 +53,7 @@ function installBaseSoftware()
     sudo ${INSTALL} qttools5-dev-tools git gdb  dde-dock-dev
     echo "  2.3 安装命令行软件"
     sudo ${INSTALL} zsh tmux aria2 ffmpeg privoxy locate curl xclip tig silversearcher-ag tree cloc ncdu python-pip python3-pip nodejs nodejs-legacy npm ctags-exuberant clang-format
+    sudo npm install npm@lts -g
     if [ ${OS} = "Deepin" ]; then
         echo "卸载无用安装包"
         sudo ${UNINSTALL} vim youdao-dict steam deepin.com.qq.im
