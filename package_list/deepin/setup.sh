@@ -147,8 +147,6 @@ function configCliSoftware()
     echo "  5.3 设置zsh/tmux/vim"
     chsh -s /usr/bin/zsh
     git clone https://github.com/tmux-plugins/tpm "${HOME}/.tmux/plugins/tpm"
-    curl -fLo ${HOME}/.vim/autoload/plug.vim --create-dirs \
-            https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
     vim +PlugInstall +qall
     echo "请手动下载clang+llvm*.tar.xz包至${HOME}/.vim/plugged/YouCompleteMe/third_party/ycmd/clang_archives目录"
     google-chrome http://releases.llvm.org/download.html
