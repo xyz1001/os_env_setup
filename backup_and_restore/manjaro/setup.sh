@@ -206,9 +206,9 @@ function software_config() {
 function extra_config() {
     log 0 "5. 其他配置"
     log 1 "5.1 控制中心相关设置"
-    press_any_key_to_continue '1. 更换头像\n2. 亮度中开启"自动调节色温" \n3. 默认程序 \n4. 标准字体修改为"文泉驿微米黑"，等宽字体修改为"Fira Code" \n5. 更换图标主题 \n6. 更换字体 \n7. 关闭音效 \n8. 开启时间"自动同步" \n9. 开启"插入鼠标禁用触摸板"'
+    press_any_key_to_continue '1. 更换头像\n2. 亮度中开启"自动调节色温" \n3. 默认程序 \n4. 标准字体修改为"Noto Sans CJK SC"，等宽字体修改为"Fira Code" \n5. 更换图标主题 \n6. 关闭音效 \n7. 开启时间"自动同步" \n8. 开启"插入鼠标禁用触摸板"'
     log 1 "5.2 其他软件设置"
-    press_any_key_to_continue '1. albert \n2. notepadqq \n3. Android Studio \n4. Zeal \n5. StarUML'
+    press_any_key_to_continue '1. fcitx\n2. albert \n3. notepadqq \n4. Android Studio \n5. Zeal \n6. StarUML'
 }
 
 function main() {
