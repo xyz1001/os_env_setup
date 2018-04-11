@@ -128,7 +128,7 @@ function restore_extra_packages() {
     git config --global https.proxy 'socks5://127.0.0.1:1080'
     log 1 "3.2 安装Python软件"
     sudo pip2 --proxy 127.0.0.1:8118 install youdao
-    sudo pip --proxy 127.0.0.1:8118 install you-get thefuck tldr 
+    sudo pip --proxy 127.0.0.1:8118 install you-get thefuck tldr cppman icdiff
     log 1 "3.3 安装npm软件"
     sudo -E npm install hexo-cli -g
     log 1 "3.4 源码软件"
