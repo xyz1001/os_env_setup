@@ -68,7 +68,7 @@ function restore_official_packages() {
     log 0 "1. 恢复官方软件包"
     log 1 "1.1 调整软件源"
     log 2 "1.1.1 更换软件源"
-    sudo pacman-mirrors -i -c China -b stable
+    sudo pacman-mirrors -i -c China -B stable
     log 2 "1.1.2 添加Archlinuxcn源"
     grep "archlinuxcn" /etc/pacman.conf || sudo bash -c 'echo -e "[archlinuxcn]\nSigLevel = Optional TrustAll\nServer = http://mirrors.ustc.edu.cn/archlinuxcn/\$arch" >> /etc/pacman.conf'
 
@@ -82,10 +82,10 @@ function restore_official_packages() {
     sudo pacman -Syyu
     log2 "1.2.4 安装已备份官方软件包"
     wget https://github.com/xyz1001/software-notes/raw/master/backup_and_restore/manjaro/pacman.lst -O /tmp/pacman.lst
-    check_file /tmp/pacman.lst && sudo pacman -S $(< /tmp/pacman.lst) --needed && return 0
+    check_file /tmp/pacman.lst && sudo pacman -S $(comm -12 <(pacman -Slq|sort -u) <(cat pacman.lst | sort)) --needed && return 0
     if choose 'Pacman安装失败，若错误提示为"Signature from xxx is unknown trust, installation failed"，可尝试修复，是否立即修复？'; then
         if repair_pacman; then
-            sudo pacman -S $(< pacman.lst) --needed
+            sudo pacman -S $(comm -12 <(pacman -Slq|sort -u) <(cat pacman.lst | sort)) --needed
         fi
     fi
 }
