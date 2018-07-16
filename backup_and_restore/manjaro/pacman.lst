@@ -21,7 +21,6 @@ cmake
 ctags
 dialog
 doxygen
-easystroke
 eslint
 evtest
 fcitx-configtool
