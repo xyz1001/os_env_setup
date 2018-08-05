@@ -18,7 +18,7 @@ clang
 clipit
 cloc
 cmake
-ctags
+deepin-grub2-themes
 dialog
 doxygen
 eslint
@@ -66,18 +66,18 @@ noto-fonts-cjk
 noto-fonts-emoji
 npm
 openssh
-parallel
 pkg-config
 plantuml
 postman-bin
 privoxy
 proxychains-ng
-pv
 python-notify2
 python-pip
 python-xdg
 python2-pip
 qt5
+qt5-doc
+qt5-examples
 qtav
 ranger
 redshift
@@ -100,6 +100,7 @@ ttf-wps-fonts
 typora
 universal-ctags-git
 unrar
+valgrind
 vlc
 wget
 wireshark-qt
@@ -107,7 +108,6 @@ wps-office
 wtf
 xarchiver
 xclip
-xdelta3
 xdotool
 yaourt
 yapf
