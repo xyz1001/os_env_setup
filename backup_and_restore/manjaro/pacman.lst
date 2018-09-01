@@ -9,6 +9,7 @@ autopep8
 avahi
 axel
 baidupcs-git
+bat
 besttrace
 boost
 bpython
@@ -33,6 +34,7 @@ flake8
 foxitreader
 gdb
 gitg
+diff-so-fancy
 google-chrome
 gradle
 graphicsmagick
