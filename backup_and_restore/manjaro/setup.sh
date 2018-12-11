@@ -113,8 +113,7 @@ function base_env_config() {
     log 2 "2.5.2 删除无用目录"
     cd ~ && rmdir 文档 公共 模板 下载 音乐 桌面 视频; rm -r 图片
     log 2 "2.5.3 创建必需目录"
-    mkdir ~/{Project,Code,Application}
-    ln -s /tmp ~/Temp
+    mkdir ~/{Project,Code,Application,Temp}
 }
 
 function restore_extra_packages() {
