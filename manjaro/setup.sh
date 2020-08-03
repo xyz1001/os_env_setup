@@ -67,6 +67,11 @@ function setup_home() {
 }
 
 function setup_proxy() {
+    read -p "Trojan server ssh host: " host
+    read -p "Trojan server ssh port: " port
+    sudo scp -P $port -r $host:/home/trojan /etc/
+    sudo systemctl enable trojan.service --now
+
     sudo sed -i 's/socks4\s*127.0.0.1\s*9050/socks5 \t127.0.0.1 1080/g' /etc/proxychains.conf
 
     sudo pip2 install gfwlist2privoxy
@@ -78,4 +83,5 @@ function setup_proxy() {
 
 function setup_input() {
     # TODO:  <02-08-20, xyz1001> #
+    true
 }
