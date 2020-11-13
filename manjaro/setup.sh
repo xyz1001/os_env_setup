@@ -18,7 +18,12 @@ function setup_pacman_pkg() {
 
 function setup_pip_pkg() {
     sudo pip2 install `cat pip2.lst`
-    sudo pip install `cat pip.lst`
+    sudo pip install `cat pip3.lst`
+}
+
+function setup_dotfiles() {
+    cd ~ && git clone git@github.com:xyz1001/dotfiles.git && cd dotfiles && ./install.py
+    cd -2
 }
 
 function setup_npm_pkg() {
@@ -28,11 +33,6 @@ function setup_npm_pkg() {
 function setup_ssh() {
     openssl rsa -in ~/.ssh/id_rsa.key -out ~/.ssh/id_rsa
     sudo chown -R `whoami`:`whoami` ~/.ssh && chmod -R 700 ~/.ssh
-}
-
-function setup_dotfiles() {
-    cd ~ && git clone git@github.com:xyz1001/dotfiles.git && cd dotfiles && ./install.py
-    cd -2
 }
 
 function setup_vim() {
