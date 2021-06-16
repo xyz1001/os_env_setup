@@ -1,120 +1,100 @@
-android-studio
-albert
-archlinuxcn-mirrorlist-git
-aria2
-atool
-autoconf
-autopep8
-avahi
-axel
-bat
-besttrace
-boost
-bpython
-cgdb
-clang
-cloc
-cmake
-copyq
-diff-so-fancy
-doxygen
-earlyoom
-eslint
-evtest
-fcitx5-chinese-addons
-fcitx5-git
-fcitx5-gtk
-fcitx5-qt
-fcitx5-pinyin-zhwiki
-fcitx5-pinyin-moegirl
-kcm-fcitx5
-fcitx5-material-color
-fd
-fdkaac
-flake8
-fzf
-gdb
-gitg
-go
-google-chrome
-gradle
-graphicsmagick
-gstreamer
-highlight
-imagemagick
-jdk8-openjdk
-jq
-kid3-qt
-libstdc++-doc
-linux-manpages
-llvm
-lsof
-man-pages
-man-pages-zh_cn
-meld
-mlocate
-moreutils
-mosh
-muparser
-mypaint
-namcap
-nasm
-ncdu
-ncurses5-compat-libs
-nerd-fonts-complete
-net-tools
-netease-cloud-music
-notepadqq
-noto-fonts-cjk
-noto-fonts-emoji
-npm
-openssh
-pkg-config
-pkgfile
-pkglist
-plantuml
-postman-bin
-privoxy
-proxychains-ng
-python-pip
-python-xdg
-python2-pip
-qt5
-qt5-doc
-qt5-examples
-ripgrep
-shellcheck
-simplescreenrecorder
-smbnetfs
-sshrc
-strace
-telegram-desktop
-tidy
-tig
-tmux
-traceroute
-trash-cli
-tree
-ttf-fira-code
-ttf-wps-fonts
-typora
-universal-ctags-git
-unrar
-valgrind
-vimcdoc
-vlc
-wget
-wireshark-qt
-wps-office
-wtf
-xarchiver
-xcape
-xclip
-xdotool
-yaourt
-yapf
-yarn
-yasm
-zeal
-zsh
-zssh
+- android-studio
+- albert
+- archlinuxcn-mirrorlist-git
+- aria2
+- autoconf
+- autopep8
+- bat
+- besttrace
+- bpython
+- clang
+- cloc
+- cmake
+- copyq
+- doxygen
+- earlyoom
+- eslint
+- evtest
+- fcitx5-chinese-addons
+- fcitx5-git
+- fcitx5-gtk
+- fcitx5-qt
+- fcitx5-pinyin-zhwiki
+- fcitx5-pinyin-moegirl
+- kcm-fcitx5
+- fcitx5-material-color
+- fd
+- flake8
+- fzf
+- gdb
+- gitg
+- go
+- gradle
+- graphicsmagick
+- highlight
+- imagemagick
+- jdk8-openjdk
+- jq
+- libstdc++-doc
+- linux-manpages
+- llvm
+- lsof
+- man-pages
+- man-pages-zh_cn
+- meld
+- moreutils
+- mosh
+- mypaint
+- namcap
+- nasm
+- ncdu
+- nerd-fonts-complete
+- net-tools
+- notepadqq
+- noto-fonts-cjk
+- noto-fonts-emoji
+- npm
+- openssh
+- pkgfile
+- pkglist
+- plantuml
+- postman-bin
+- privoxy
+- sshuttle
+- python-pip
+- python2-pip
+- qt5
+- qt5-doc
+- qt5-examples
+- ripgrep
+- shellcheck
+- simplescreenrecorder
+- sshrc
+- strace
+- tidy
+- tig
+- tmux
+- traceroute
+- trash-cli
+- tree
+- ttf-fira-code
+- ttf-wps-fonts
+- typora
+- universal-ctags-git
+- unrar
+- valgrind
+- vimcdoc
+- vlc
+- wget
+- wireshark-qt
+- wps-office
+- wtf
+- xcape
+- xclip
+- xdotool
+- yaourt
+- yapf
+- yarn
+- yasm
+- zeal
+- zsh

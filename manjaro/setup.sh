@@ -8,7 +8,8 @@ function setup_pacman() {
 }
 
 function setup_pacman_pkg() {
-    if [ -f "uninstall.lst" ]; then
+    if [ -f "uninstall.lst" ]; 
+    then
         sudo pacman -R `comm -12 <(cat uninstall.lst | sort) <(pacman -Qnq | sort)`
     fi
     if [ -f "pacman.lst" ]; then
@@ -17,7 +18,6 @@ function setup_pacman_pkg() {
 }
 
 function setup_pip_pkg() {
-    sudo pip2 install `cat pip2.lst`
     sudo pip install `cat pip3.lst`
 }
 
