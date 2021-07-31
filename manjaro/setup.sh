@@ -39,11 +39,8 @@ function setup_home() {
 }
 
 function setup_ssh() {
-    cd /tmp && git clone https://gitee.com/xyz1001/privacy.git
-    cp -r .ssh ~
-    openssl rsa -in ~/.ssh/id_rsa.key -out ~/.ssh/id_rsa
-    sudo chown -R `whoami`:`whoami` ~/.ssh && chmod -R 700 ~/.ssh
-    cd -
+    cd /tmp && git clone https://gitee.com/xyz1001/privacy.git && cd privacy && ./install.sh
+    cd -2
 }
 
 function setup_proxy() {
