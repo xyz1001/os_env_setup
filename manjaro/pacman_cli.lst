@@ -35,6 +35,7 @@ mosh
 ncdu
 net-tools
 nodejs
+openbsd-netcat
 openssh
 pkgfile
 pkglist
