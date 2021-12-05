@@ -1,15 +1,43 @@
 #!/bin/bash
 
+set -x
+
 # 适用于Manjaro Deepin的系统个性化配置脚本
 
 function setup_pacman() {
     sudo pacman-mirrors -i -c China -B stable -a
-    grep "archlinuxcn" /etc/pacman.conf || sudo bash -c 'echo -e "[archlinuxcn]\nSigLevel = Optional TrustAll\nServer = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/\$arch" >> /etc/pacman.conf' && sudo pacman -Syyu
+    grep "archlinuxcn" /etc/pacman.conf || sudo bash -c 'echo -e "[archlinuxcn]\nServer = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/\$arch" >> /etc/pacman.conf' && sudo pacman -Syyu
+    sudo pacman -S archlinux-keyring manjaro-keyring archlinuxcn-keyring
 }
 
 function setup_pacman_pkg() {
-    if [ -f "pacman.lst" ]; then
-        sudo pacman -S $(comm -12 <(pacman -Slq|sort -u) <(cat pacman.lst | sort)) --needed && return 0
+    echo "length: $#, first $1"
+    install_cli=false
+    install_gui=false
+    if [ "$#" -eq 0 ]; then
+        install_cli=true
+        install_gui=true
+    else
+        until [ $# -eq 0 ]
+        do
+            if [ "$1" = "cli" ]; then
+                install_cli=true
+            elif [ "$1" = "gui" ]; then
+                install_gui=true
+            fi
+            shift
+        done
+    fi
+
+    echo "install cli: $install_cli, install gui: $install_gui"
+
+    if $install_cli && [ -f "pacman_cli.lst" ]; then
+        sudo pacman -S $(comm -12 <(pacman -Slq|sort -u) <(cat pacman_cli.lst | sort)) --needed; true
+    fi
+
+    if $install_gui && [ -f "pacman_gui.lst" ]; then
+        echo "install gui"
+        sudo pacman -S $(comm -12 <(pacman -Slq|sort -u) <(cat pacman_gui.lst | sort)) --needed; true
     fi
 }
 
@@ -51,11 +79,11 @@ function setup_proxy() {
     sudo cp /etc/trojan/trojan.service /etc/systemd/system/
     sudo systemctl enable trojan.service --now
 
-    sudo sed -i 's/socks4\s*127.0.0.1\s*9050/socks5 \t127.0.0.1 1080/g' /etc/proxychains.conf
+    sudo sed -i 's/socks4\s*127.0.0.1\s*9050/socks5 \t127.0.0.1 10800/g' /etc/proxychains.conf
 
     sudo pip2 install gfwlist2privoxy
     wget https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt -O /tmp/gfwlist.txt
-    sudo gfwlist2privoxy -i /tmp/gfwlist.txt -f /etc/privoxy/gfwlist.action -p 127.0.0.1:1080 -t socks5
+    sudo gfwlist2privoxy -i /tmp/gfwlist.txt -f /etc/privoxy/gfwlist.action -p 127.0.0.1:10800 -t socks5
     sudo bash -c 'echo "actionsfile gfwlist.action" >> /etc/privoxy/config'
     sudo systemctl enable privoxy.service --now
 }
