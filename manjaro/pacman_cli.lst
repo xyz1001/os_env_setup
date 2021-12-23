@@ -15,6 +15,7 @@ fakeroot
 fd
 fzf
 gdb
+gdu
 git-delta
 go
 graphicsmagick
@@ -32,7 +33,6 @@ man-pages
 man-pages-zh_cn
 moreutils
 mosh
-ncdu
 net-tools
 nodejs
 openbsd-netcat
